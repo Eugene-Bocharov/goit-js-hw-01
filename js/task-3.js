@@ -1,16 +1,20 @@
 'use strict';
 
 const ADMIN_PASSWORD = 'jqueryismyjam';
-let password = prompt('Введіть пароль');
+let password = prompt('Введіть пароль!');
 let message;
 
-if (password === ADMIN_PASSWORD){
-   message = 'Ласкаво просимо!';
-   console.log(message);
-} else if (password != ADMIN_PASSWORD) {
+
+
+if (password) {
+ if (password === ADMIN_PASSWORD) {
+    message = 'Ласкаво просимо!';
+    console.log(message);
+ } else {
     message = 'Доступ заборонений, невірний пароль!';
-    console.log(message);
+    console.log(message);;
+    }
 } else {
-    message = 'Скасовано користувачем!';
-    console.log(message);
-}
+    console.log('Скасовано користувачем!');
+};
+
