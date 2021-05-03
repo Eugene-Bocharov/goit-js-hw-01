@@ -32,5 +32,5 @@ let cost;
             break;
     
         default:
-            console.log(`Доставка в ${usercountry} буде коштувати ${cost} кредитів`);   
+            console.log(`У вашій країні доставка недоступна`);   
     }
